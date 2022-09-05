@@ -29,7 +29,7 @@ RSpec.describe 'projects show page' do
     visit"/projects/#{lit_fit.id}"
 
    expect(page).to have_content("Apartment Furnishings")
-
+   
 
   end
 end
