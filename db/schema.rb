@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2022_08_29_230147) do
     t.bigint "challenge_id"
     t.index ["challenge_id"], name: "index_projects_on_challenge_id"
   end
-
+  
   add_foreign_key "contestant_projects", "contestants"
   add_foreign_key "contestant_projects", "projects"
   add_foreign_key "projects", "challenges"
